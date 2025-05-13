@@ -1,15 +1,19 @@
+
+/*
+ * Copyright (C) 2025 Tec de Monterrey
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
 #include <math.h>
 #include <stdexcept>
 
-int mul(int a, int b);
-
 /**
- * @brief Multiplica dos números enteros y retorna el resultado como un entero.
- * 
- * @param a Primer número (factor).
- * @param b Segundo número (factor).
- * @return int Resultado de la multiplicación de a y b.
+  metodo para realizar multiplicación de dos numeros
  */
-
-
-#endif  // MUL_H
+double multiply(int x, int y)
+{
+    return x * y;
+}
