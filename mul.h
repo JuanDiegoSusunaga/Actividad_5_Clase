@@ -1,5 +1,5 @@
-#ifndef MUL_H
-#define MUL_H
+#include <math.h>
+#include <stdexcept>
 
 int mul(int a, int b);
 
