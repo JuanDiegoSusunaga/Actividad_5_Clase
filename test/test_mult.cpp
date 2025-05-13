@@ -3,6 +3,13 @@
 
 TEST(MulTest, HandlesPositiveInput)
 {
-  int multriplicacion = sum(1, 5);
-  EXPECT_EQ(multriplicacion, 6);
+  int multiplicacion = mul(1, 5);
+  EXPECT_EQ(multiplicacion, 6);
+}
+
+TEST(MulTest, HandlesNegativeInput)
+{
+  int multiplicacion = mul(-2,-4);
+  EXPECT_EQ(multiplicacion, 8);
+
 }
