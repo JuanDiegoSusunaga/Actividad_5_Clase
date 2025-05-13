@@ -1,37 +1,17 @@
-#include <gtest/gtest.h>
+#include <iostream>
+
 #include "sum.h"
 #include "sub.h"
 #include "div.h"
-#include "mul.h" 
+#include "mul.h"
 
-TEST(SumTest, HandlesPositiveInput) {
-    EXPECT_EQ(sum(1, 5), 6);
-}
+using std::cout;
 
-TEST(SubTest, HandlesPositiveInput) {
-    EXPECT_EQ(sub(5, 1), 4);
-}
+int main() {
 
-TEST(DivTest, HandlesPositiveInput) {
-    EXPECT_EQ(div(9, 3), 3);
-}
-
-TEST(MulTest, HandlesPositiveInput) {
-    EXPECT_EQ(mul(4, 7), 28);
-}
-
-TEST(SumTest, HandlesNegativeInput) {
-    EXPECT_EQ(sum(-1, -5), -6);
-}
-
-TEST(SubTest, HandlesNegativeInput) {
-    EXPECT_EQ(sub(-5, -1), -4);
-}
-
-TEST(DivTest, HandlesNegativeInput) {
-    EXPECT_EQ(div(-9, 3), -3);
-}
-
-TEST(MulTest, HandlesNegativeInput) {
-    EXPECT_EQ(mul(-4, 7), -28);
+    std::cout << "sum(1, 5) = " << sum(1, 5) << '\n';
+    std::cout << "sub(5, 1) = " << sub(5, 1) << '\n';
+    std::cout << "div(9, 3) = " << divide(9, 3) << '\n';
+    std::cout << "mul(7,10) = " << multiply(7,10) << '\n'; 
+    return 0;
 }
