@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.30)
 
-# Nombre del proyecto
+# Nombre del proyecto.
 project(Actividad_5_Clase VERSION 1.0.0 LANGUAGES C CXX)
 
 # Configuración global de CMake
