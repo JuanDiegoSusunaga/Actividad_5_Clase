@@ -1,23 +1,34 @@
 #include <gtest/gtest.h>
 #include "mul.h"
 
-TEST(MulTest, HandlesPositiveInput)
-{
+// Multiplicación de dos números positivos
+TEST(MulTest, HandlesPositiveInput) {
     int result = multiply(9, 3);
     EXPECT_EQ(result, 27);
 }
 
-TEST(MulTest, HandlesZeroInput)
-{
+// Multiplicación por cero (segundo operando)
+TEST(MulTest, HandlesZeroInput) {
     int result = multiply(9, 0);
     EXPECT_EQ(result, 0);
 }
 
-TEST(MulTest, HandlesNegativeInput)
-{
+// Multiplicación con número negativo
+TEST(MulTest, HandlesNegativeInput) {
     int result = multiply(-2, 4);
     EXPECT_EQ(result, -8);
 }
-//
+
+// Multiplicación de dos negativos
+TEST(MulTest, HandlesDoubleNegativeInput) {
+    int result = multiply(-3, -5);
+    EXPECT_EQ(result, 15);
+}
+
+// Multiplicación con primer operando cero
+TEST(MulTest, HandlesZeroFirstInput) {
+    int result = multiply(0, 7);
+    EXPECT_EQ(result, 0);
+}
+
 // Created by x on 12/05/2025.
-//
