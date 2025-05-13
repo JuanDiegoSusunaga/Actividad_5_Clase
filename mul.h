@@ -1,7 +1,7 @@
 #ifndef MUL_H
 #define MUL_H
 
-int multiply(int a, int b);
+int mul(int a, int b);
 
 /**
  * @brief Multiplica dos números enteros y retorna el resultado como un entero.
