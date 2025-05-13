@@ -13,11 +13,11 @@ TEST(SubTest, HandlesPositiveInput) {
 }
 
 TEST(DivTest, HandlesPositiveInput) {
-    EXPECT_EQ(divide(9, 3), 3);
+    EXPECT_EQ(div(9, 3), 3);
 }
 
 TEST(MulTest, HandlesPositiveInput) {
-    EXPECT_EQ(multiply(4, 7), 28);
+    EXPECT_EQ(mul(4, 7), 28);
 }
 
 TEST(SumTest, HandlesNegativeInput) {
@@ -29,9 +29,9 @@ TEST(SubTest, HandlesNegativeInput) {
 }
 
 TEST(DivTest, HandlesNegativeInput) {
-    EXPECT_EQ(divide(-9, 3), -3);
+    EXPECT_EQ(div(-9, 3), -3);
 }
 
 TEST(MulTest, HandlesNegativeInput) {
-    EXPECT_EQ(multiply(-4, 7), -28);
+    EXPECT_EQ(mul(-4, 7), -28);
 }
