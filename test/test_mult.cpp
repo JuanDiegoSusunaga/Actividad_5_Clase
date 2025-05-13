@@ -4,5 +4,5 @@
 TEST(MulTest, HandlesPositiveInput)
 {
   int multiplicacion = multiply(1, 5);
-  EXPECT_EQ(multiplicacion, 6);
+  EXPECT_EQ(multiplicacion, 5);
 }
