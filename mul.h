@@ -1,23 +1,27 @@
-#ifndef MUL_H
-#define MUL_H
+#include <iostream>
+#include <stdexcept>
 
-inline int multiply(int a, int b) {
-    return a * b;
+double divide(int x, int y)
+{
+    if (y == 0)
+    {
+        throw std::invalid_argument("Error: Division by zero is not allowed.");
+    }
+    return static_cast<double>(x) / y;
 }
 
-#endif
+int main()
+{
+    try {
+        // Prueba de división normal
+        double result = divide(10, 2);
+        std::cout << "Resultado de 10 / 2 = " << result << std::endl;  // Esperado: 5.0
 
-#include <gtest/gtest.h>
-#include "mul.h"
+        // Prueba de división por cero
+        result = divide(10, 0);  // Debería lanzar una excepción
+    } catch (const std::invalid_argument& e) {
+        std::cout << e.what() << std::endl;  // Esperado: "Error: Division by zero is not allowed."
+    }
 
-TEST(MulTest, HandlesPositiveInput) {
-    EXPECT_EQ(multiply(4, 5), 20);
-}
-
-TEST(MulTest, HandlesNegativeInput) {
-    EXPECT_EQ(multiply(-4, 5), -20);
-}
-
-TEST(MulTest, HandlesZeroInput) {
-    EXPECT_EQ(multiply(0, 5), 0);
+    return 0;
 }
