@@ -3,7 +3,6 @@
 
 TEST(MulTest, HandlesPositiveInput)
 {
-int multriplicacion = sum(1, 5);
-
-EXPECT_EQ(multriplicacion, 6);
+  int multriplicacion = sum(1, 5);
+  EXPECT_EQ(multriplicacion, 6);
 }
